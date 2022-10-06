@@ -1,0 +1,13 @@
+file1 = open("data.txt", "w")
+list = ["Saket Pathak \n", "0000 Street name. \n","Birthday \n", "City \n","State \n", "USA \n","HighSchool" ]
+file1.writelines(list)
+file1.close()
+file1 = open("data.txt", "a")
+file1.write("\n")
+list = ("Sport \n","Subject")
+file1.writelines(list)
+file1.close()
+file1 = open("data.txt", "r")
+print(file1.read())
+print()
+file1.close()
